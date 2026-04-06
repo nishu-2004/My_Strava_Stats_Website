@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats - My Strava Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff5f6d, #3a1c71);
+            color: white;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+        .back-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .stat-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .stat-card .label {
+            font-size: 14px;
+            color: #ddd;
+        }
+        .stat-card .value {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="explore.html" class="back-btn">← Back</a>
+    </nav>
+    <div class="container">
+        <h1>📊 Stats</h1>
+
+        <div class="section">
+            <h2>Last 4 Weeks</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="label">Activities / Week</div>
+                    <div class="value">5</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Avg Distance / Week</div>
+                    <div class="value">35.0 km</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Avg Time / Week</div>
+                    <div class="value">3h 34m</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Elev Gain / Week</div>
+                    <div class="value">258 m</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2026</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="label">Activities</div>
+                    <div class="value">72</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Distance</div>
+                    <div class="value">384.0 km</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Time</div>
+                    <div class="value">39h 7m</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Elev Gain</div>
+                    <div class="value">2,406 m</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>All-Time</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="label">Activities</div>
+                    <div class="value">398</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Distance</div>
+                    <div class="value">1,985.2 km</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Time</div>
+                    <div class="value">190h 57m</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Elev Gain</div>
+                    <div class="value">8,476 m</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - My Strava Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ff5f6d, #3a1c71);
+            color: white;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+        .back-btn {
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+        }
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateX(-5px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+        .section:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+        .section p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="back-btn">← Back</a>
+    </nav>
+    <div class="container">
+        <h1>Explore My Running Journey</h1>
+        <a href="race-records.html">
+            <div class="section">
+                <h2>🏆 Personal Records</h2>
+                <p>View my best times and achievements in various distances.</p>
+            </div>
+        </a>
+        <a href="activities.html">
+            <div class="section">
+                <h2>🏃 Activities</h2>
+                <p>Browse through my recent runs and training sessions.</p>
+            </div>
+        </a>
+        <a href="stats.html">
+            <div class="section">
+                <h2>📊 Stats</h2>
+                <p>Check out my running statistics and progress over time.</p>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
